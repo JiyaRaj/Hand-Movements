@@ -1,0 +1,73 @@
+ 
+<html>
+  <head>
+    <title>Hand to Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+<h2 class="btn btn-info">Hand to Emoji
+  <br>
+  <span>&#9994;</span>
+  <span>&#9996;</span>
+  <span>&#128076;</span>
+  <span>&#128077;</span>
+  <span>&#128080;</span>
+  <span>&#128406; </span>
+
+</h2>
+      <br><br>
+
+      <p style="font-size: 22px;">Take your picture to generate hand emoji
+      	<br>
+        <b style="color: yellow">Are you the best?</b>
+        <br>
+        <b style="color: black">Are you ok?</b>
+        <br>
+        <b style="color: greenyellow">Are you amazing?</b>
+        <br>
+      </p>
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <label>Webcam View</label>
+  <div id="camera"></div>
+  <br><br>
+  <button class="btn btn-primary" onclick="Take_pic()">Take Picture</button>
+</div>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <label>Prediction 1</label>
+  <p id="hand_1" class="hand_name"></p>
+  <p id="emoji_1" class="emoji"></p>
+
+  <label>Prediction 2</label>
+  <p id="hand_2" class="hand_name"></p>
+  <p id="emoji_2" class="emoji"></p>
+</div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+<div id="result"></div> 
+        <br><br>
+<button class="btn btn-warning" onclick="result()">Reveal the Hand Emoji</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
